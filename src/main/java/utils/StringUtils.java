@@ -1,4 +1,4 @@
-package Utils;
+package utils;
 
 import java.util.*;
 
@@ -9,10 +9,10 @@ public class StringUtils {
         return cut(parsed);
     }
     public static boolean beginsWith(String str,String str2){
-        String substring = str.substring(0,10);
-        if (substring.contains(str2)) return true;
+        if (str.matches("^" + str2 + "?:")) return true;
         else return false;
     }
+
     public static String cut(String s){
         try{
         int index = 0;

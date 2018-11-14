@@ -1,17 +1,13 @@
-package WebScrapers;
+package webscrapers;
 
-import Utils.StringUtils;
+import utils.StringUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 
 import java.util.HashMap;
 
-public class AuWebScraper {
-
-    public AuWebScraper(){
-
-    }
+public class JsoupAUScraper {
 
     public static HashMap<String,Integer> allGoals() throws Exception{
         HashMap<String,Integer> hashmap = new HashMap<String,Integer>();
@@ -57,9 +53,5 @@ public class AuWebScraper {
 
     }
 
-    public static void main(String[] args) throws Exception{
-        AuWebScraper scraper = new AuWebScraper();
-
-    }
 
 }

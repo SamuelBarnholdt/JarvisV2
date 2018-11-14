@@ -1,4 +1,4 @@
-import Utils.Interface;
+import utils.Interface;
 
 public class Main {
 

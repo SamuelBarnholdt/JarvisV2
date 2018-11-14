@@ -1,5 +1,5 @@
-package WebScrapers;
-import Utils.StringUtils;
+package webscrapers;
+import utils.StringUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -9,10 +9,8 @@ import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
-public class SeleniumDriver {
-    public SeleniumDriver(){
+public class SeleniumAuScraper {
 
-    }
     public static LinkedList<String> getFinishedGoals(String username, String passwords) throws BadUserCredentialsException{
         WebDriver driver = new ChromeDriver();
         WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -37,7 +35,9 @@ public class SeleniumDriver {
             if (element.getAttribute("innerHTML").contains("background-color: green; border"))
                 list.add(StringUtils.cut(element.getText()));
             }
-            driver.quit();
+
+
+        driver.quit();
         if (list.isEmpty()) throw new BadUserCredentialsException("Wrong username or password.");
         return list;
 
@@ -46,9 +46,5 @@ public class SeleniumDriver {
         public BadUserCredentialsException(String errormessage){
             super(errormessage);
         }
-    }
-    public static void main(String[] args) throws BadUserCredentialsException{
-        SeleniumDriver driver = new SeleniumDriver();
-        driver.getFinishedGoals("","");
     }
 }
