@@ -1,4 +1,4 @@
-Goalcollector for IOOPM2018.
+Goaltracker(aka Jarvis) for IOOPM2018.
 
 Requirements for usage are:
 
