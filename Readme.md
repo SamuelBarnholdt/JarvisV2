@@ -18,6 +18,7 @@ mvn install
 mvn exec:java -Dexec.mainClass=Main
 
 Program:
+
 (case insensitive)
 
 GoalsLeft prints out remaining goals and how many they are.
