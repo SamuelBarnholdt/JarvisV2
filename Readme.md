@@ -10,12 +10,7 @@ Requirements for usage are:
 
 4. This repository needs to be located in your user.home directory.
 
-
-Build (disclaimer: I don't know how maven works)
-
-mvn install
-
-mvn exec:java -Dexec.mainClass=Main
+Main class is Main . 
 
 Program:
 
