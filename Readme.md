@@ -25,7 +25,7 @@ Desc 'goal' gives you the description of 'goal'.
 
 Completed gives you the amount of goals you have completed and how many goals you have left.
 
-UpdateGoals Updates completed goals. If several users want to check on same devis run reset first. 
+UpdateGoals Updates completed goals. If several users want to check on same device run reset first. 
 
 Reset resets all goals.
 
